@@ -5,9 +5,11 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
@@ -17,10 +19,11 @@ import java.util.List;
 
 public class Main2Activity extends AppCompatActivity {
     private Toolbar mToolbar;
-    private List<String> userList = new ArrayList<>();
+    private List<String> playerList = new ArrayList<>();
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
+    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.PLAYER_LIST";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +33,12 @@ public class Main2Activity extends AppCompatActivity {
         mToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
 
-        userList.add("Toby");
-        userList.add("Bach");
-        userList.add("Test user 0");
-        userList.add("Test user 1");
-        userList.add("Test user 2");
-        userList.add("Test user 3");
+        playerList.add("Toby");
+        playerList.add("Bach");
+        playerList.add("Test user 0");
+        playerList.add("Test user 1");
+        playerList.add("Test user 2");
+        playerList.add("Test user 3");
 
         recyclerView = findViewById(R.id.my_recycler_view);
 
@@ -48,7 +51,7 @@ public class Main2Activity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
-        mAdapter = new UserAdapter(userList);
+        mAdapter = new UserAdapter(playerList);
         recyclerView.setAdapter(mAdapter);
     }
 
@@ -64,7 +67,7 @@ public class Main2Activity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.edit_user);
         String user = editText.getText().toString();
         if (!(user.equals(""))) {
-            userList.add(user);
+            playerList.add(user);
             editText.getText().clear();
 
             mAdapter.notifyDataSetChanged();
@@ -72,6 +75,12 @@ public class Main2Activity extends AppCompatActivity {
             editText.setError("Name fehlt!");
         }
 
-        recyclerView.scrollToPosition(userList.size() - 1);
+        recyclerView.scrollToPosition(playerList.size() - 1);
+    }
+
+    public void startGame(MenuItem item) {
+        Intent intend = new Intent(this, Main3Activity.class);
+        intend.putStringArrayListExtra("playerList", new ArrayList<>(playerList));
+        startActivity(intend);
     }
 }
