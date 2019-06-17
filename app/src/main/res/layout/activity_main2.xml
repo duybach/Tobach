@@ -11,5 +11,6 @@
         android:textColor="@color/colorBlack"
         android:gravity="center"
         android:textSize="32sp"
-        android:onClick="setRandomTextView" />
+        android:onClick="setRandomTextView"
+        android:layout_margin="32sp" />
 </LinearLayout>

@@ -41,7 +41,13 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void setRandomText() {
-        TextView game_view = findViewById(R.id.game_view);
-        game_view.setText(String.format(getRandomText(), getRandomPlayer()));
+        TextView gameView = findViewById(R.id.game_view);
+        String gameText = getRandomText();
+        String playerOne = getRandomPlayer();
+        Random rand = new Random();
+        int amount = rand.nextInt(5 - 2 + 1) + 2;
+        gameText = gameText.replace("{{ name }}", playerOne);
+        gameText = gameText.replace("{{ amount }}", Integer.toString(amount));
+        gameView.setText(gameText);
     }
 }

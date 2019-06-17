@@ -6,7 +6,21 @@
     <string name="button_add_user">Hinzufügen</string>
     <string name="start_game">Start</string>
     <string-array name="game_text_list">
-        <item>%s muss 0</item>
-        <item>%s muss 3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY3 REALLY</item>
+        <item>Achtet auf die Zeit.\n{{ name }}, du darfst 5 Schlücke verteilen, wenn du innerhalb von 3 Sekunden ein Tier mit dem Anfangsbuchstaben R nennst!\nZeit läuft!</item>
+        <item>{{ name }} erkläre einen Begriff mit nur 3 Wörtern, der Erste der Ihn errät darf {{ amount }} Schlücke verteilen.</item>
+        <item>Regel\nWenn ihr trinken müsst, könnt ihr Kopf oder Zahl spielen. Wenn ihr gewinnt müsst Ihr nicht trinken, sonst doppelt.</item>
+        <item>{{ name }}, wenn du schon mehr als 2 Gläser getrunken hast, verteile {{ amount }} Schlücke, wenn nicht trinke sie selber.</item>
+        <item>Abstimmung\nLieber kein Internet oder kein Handy mehr haben?\nDie Verlierer trinken {{ amount }} Schlücke.</item>
+        <item>{{ name }}, wähle etwas, das du magst, alle Spieler, die das nicht mögen, trinken {{ amount }} Schlücke. Wenn niemand trinkt, trinkst du sie mit Freude selber.</item>
+        <item>Der oder die Spieler, der/die als letztes geraucht hat/haben, muss/müssen {{ amount }} Schlücke trinken.\nRauchen ist tödlich :)</item>
+        <item>{{ name }}, wählt ein Wort. Die Person, die zuerst ein Satz eines Liedes singt, in dem das Wort vorkommt, verteilt {{ amount }} Schlücke.</item>
+        <item>Der jenige, der zuletzt pinkeln war, trinkt {{ amount }} Schlücke.</item>
+        <item>{{ name }} sucht sich einen Saufkumpanen aus, mit dem er ab jetzt immer zusammen trinken muss.</item>
+        <item>{{ name }} trinkt 5 Schlücke, der Nachbar links davon 4 usw. bis ihr bei 0 angekommen seid.</item>
+        <item>RUTSCHE!!\nDie nächste Runde müssen die jenigen, die trinken müssen, doppelt trinken.</item>
+        <item>Blutsbrüder\n{{ name }} sucht sich einen Spieler aus, der auch die Hälfte aus seinem Glas mit ihm trinkt.</item>
+        <item>Die beiden, die am wenigsten in Ihren Gläsern haben trinken auf Ex.</item>
+        <item>Die Person, die als letztes dazu gekommen ist, muss für jede anwesende Person ein Schluck trinken.</item>
+        <item>Charaktäre aus How i met your. {{ name }} beginnt. Der Spieler der einen doppelt bzw keinem mehr einfällt, trinkt {{ amount }} Schlücke.</item>
     </string-array>
 </resources>
